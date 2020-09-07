@@ -21,7 +21,7 @@ framerate = 20
 
 # The number of bars (0-200). 0 sets it to auto (fill up console).
 # Bars' width and space between bars in number of characters.
-bars = 64
+bars = 2
 ; bar_width = 2
 ; bar_spacing = 1
 
@@ -63,7 +63,7 @@ higher_cutoff_freq = 20000
 ; source = hw:Loopback,1
 
 method = fifo
-source = /tmp/mpd.fifo
+source = /tmp/mpd2.fifo
 ; sample_rate = 44100
 ; sample_bits = 16
 
@@ -93,7 +93,7 @@ channels = stereo
 ; mono_option = average
 
 # Raw output target. A fifo will be created if target does not exist.
-raw_target = /tmp/cava_fifo
+raw_target = /tmp/cava2_fifo
 
 # Raw data format. Can be 'binary' or 'ascii'.
 data_format = ascii
@@ -102,7 +102,7 @@ data_format = ascii
 ; bit_format = 16bit
 
 # Ascii max value. In 'ascii' mode range will run from 0 to value specified here
-ascii_max_range = 30
+ascii_max_range = 32
 
 # Ascii delimiters. In ascii format each bar and frame is separated by a delimiters.
 # Use decimal value in ascii table (i.e. 59 = ';' and 10 = '\n' (line feed)).
