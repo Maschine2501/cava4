@@ -368,8 +368,8 @@ as of 0.4.0 all options are specified in config file, see in '/home/username/.co
         audio.format = -1;
         audio.rate = 0;
         audio.FFTbassbufferSize = 4096;
-        audio.FFTmidbufferSize = 1024;
-        audio.FFTtreblebufferSize = 512;
+        audio.FFTmidbufferSize = 2048;
+        audio.FFTtreblebufferSize = 1024;
         audio.terminate = 0;
         if (p.stereo)
             audio.channels = 2;
